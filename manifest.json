@@ -1,0 +1,20 @@
+{
+    "name": "WSB Good Feelings Button",
+    "version": "1.0",
+    "description": "Feel better about your loss on Robinhood!",
+    "permissions": ["declarativeContent"],
+    "browser_action": {},
+    "content_scripts": [
+      {
+      "js": ["jquery.min.js", "wsb-good-feelings-button.js"],
+      "matches": ["*://*.robinhood.com/*"]
+      }
+    ],
+    "icons": {
+      "16": "images/wsb-good-feelings-button16.png",
+      "32": "images/wsb-good-feelings-button32.png",
+      "48": "images/wsb-good-feelings-button48.png",
+      "128": "images/wsb-good-feelings-button128.png"
+    },
+    "manifest_version": 2
+  }
